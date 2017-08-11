@@ -4,8 +4,8 @@ import {DomSanitizer} from '@angular/platform-browser';
 @Component({
     moduleId: module.id,
     selector: 'webcam-component',
-    templateUrl: 'webcam.html',
-    styleUrls: ['webcam.css']
+    templateUrl: './view/webcam.html',
+    styleUrls: ['./css/webcam.css']
 })
 
 

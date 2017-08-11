@@ -14,6 +14,8 @@ import { TaskComponent } from './task.component';
 import { GridComponent } from './grid.component'
 import { TaskService} from './task.service';
 
+import { WebCamComponent } from './webcam.components';
+
 import { AppRoutingModule }     from './app-routing.modules';
 
 // Imports for loading & configuring the in-memory web api
@@ -34,6 +36,7 @@ import { NgGridModule } from 'angular2-grid';
     GridComponent,
     HeroesComponent,
     HeroDetailComponent,
+    WebCamComponent
   ],
   imports: [
     BrowserModule,
