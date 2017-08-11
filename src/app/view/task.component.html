@@ -1,0 +1,21 @@
+<h3>Top Tasks</h3>
+
+ <ul class="tasks"> 
+  <li *ngFor="let task of tasks" 
+      [class.selected]="task === selectedTask"
+       (click)="onSelect(task)">
+      <span class="badge">{{task.id}}</span> 
+      {{task.name}}
+      {{task.completed}}
+      {{task.note}}
+      <button class="delete" (click)="delete(task); $event.stopPropagation()">x</button>
+      
+  </li> 
+  </ul>
+
+<div [ngGrid]="{'resizeable': false, 'margins': [5, 10]}">
+    <div *ngFor="let task of tasks" >
+        <div class="badge">{{task.name}}</div>
+        <p>{{task.note}}</p>
+    </div>
+</div>
