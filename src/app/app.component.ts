@@ -9,6 +9,8 @@ import { Component } from '@angular/core';
         <a routerLink="/tasks">Tasks</a>
         <a routerLink="/grid">Grid Example</a>
         <a routerLink="/webcam">WebCamStreaming</a>
+        <a routerLink="/webcamplayer">WebCamPlayer</a>
+        
     </nav>
     <router-outlet></router-outlet>
   `

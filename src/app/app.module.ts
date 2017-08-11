@@ -26,6 +26,13 @@ import { AppComponent } from './app.component';
 
 import { NgGridModule } from 'angular2-grid';
 
+import {VgCoreModule} from 'videogular2/core';
+import {VgControlsModule} from 'videogular2/controls';
+import {VgOverlayPlayModule} from 'videogular2/overlay-play';
+import {VgBufferingModule} from 'videogular2/buffering';
+import {SingleMediaPlayer} from './singlemediaplayer.component';
+
+
 
 
 @NgModule({
@@ -36,7 +43,8 @@ import { NgGridModule } from 'angular2-grid';
     GridComponent,
     HeroesComponent,
     HeroDetailComponent,
-    WebCamComponent
+    WebCamComponent,
+    SingleMediaPlayer
   ],
   imports: [
     BrowserModule,
@@ -44,7 +52,11 @@ import { NgGridModule } from 'angular2-grid';
     HttpModule,
     InMemoryWebApiModule.forRoot(InMemoryDataService,{passThruUnknownUrl: true}),
     AppRoutingModule,
-    NgGridModule
+    NgGridModule,
+    VgCoreModule,
+    VgControlsModule,
+    VgOverlayPlayModule,
+    VgBufferingModule
     ],
   providers: [HeroService,TaskService],
   bootstrap: [AppComponent]

@@ -4,9 +4,11 @@ import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent }   from './dashboard.component';
 import { HeroesComponent }      from './heroes.component';
 import { HeroDetailComponent }  from './hero-detail.component';
-import { TaskComponent }        from './task.component'
-import { GridComponent }        from './grid.component'
+import { TaskComponent }        from './task.component';
+import { GridComponent }        from './grid.component';
 import { WebCamComponent } from './webcam.components';
+
+import { SingleMediaPlayer } from './singlemediaplayer.component';
 
 
 const routes: Routes = [
@@ -16,7 +18,8 @@ const routes: Routes = [
   { path: 'detail/:id', component: HeroDetailComponent },
   { path: 'heroes',     component: HeroesComponent },
   { path: 'grid',     component: GridComponent },
-  { path: 'webcam',   component:WebCamComponent}
+  { path: 'webcam',   component:WebCamComponent},
+  { path: 'webcamplayer',   component:SingleMediaPlayer}
 ];
 
 @NgModule({
