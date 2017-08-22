@@ -32,8 +32,9 @@ import {VgOverlayPlayModule} from 'videogular2/overlay-play';
 import {VgBufferingModule} from 'videogular2/buffering';
 import {SingleMediaPlayer} from './singlemediaplayer.component';
 
+import { ChartsModule } from 'ng2-charts';
 
-
+import { BarChartComponent } from './barChart.component'
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import {SingleMediaPlayer} from './singlemediaplayer.component';
     HeroesComponent,
     HeroDetailComponent,
     WebCamComponent,
-    SingleMediaPlayer
+    SingleMediaPlayer,
+    BarChartComponent
   ],
   imports: [
     BrowserModule,
@@ -56,7 +58,8 @@ import {SingleMediaPlayer} from './singlemediaplayer.component';
     VgCoreModule,
     VgControlsModule,
     VgOverlayPlayModule,
-    VgBufferingModule
+    VgBufferingModule,
+    ChartsModule
     ],
   providers: [HeroService,TaskService],
   bootstrap: [AppComponent]

@@ -10,6 +10,7 @@ import { WebCamComponent } from './webcam.components';
 
 import { SingleMediaPlayer } from './singlemediaplayer.component';
 
+import { BarChartComponent } from './barChart.component'
 
 const routes: Routes = [
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
@@ -19,7 +20,8 @@ const routes: Routes = [
   { path: 'heroes',     component: HeroesComponent },
   { path: 'grid',     component: GridComponent },
   { path: 'webcam',   component:WebCamComponent},
-  { path: 'webcamplayer',   component:SingleMediaPlayer}
+  { path: 'webcamplayer',   component:SingleMediaPlayer},
+  { path: 'barchart',   component:BarChartComponent},
 ];
 
 @NgModule({

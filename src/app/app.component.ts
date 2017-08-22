@@ -10,7 +10,7 @@ import { Component } from '@angular/core';
         <a routerLink="/grid">Grid Example</a>
         <a routerLink="/webcam">WebCamStreaming</a>
         <a routerLink="/webcamplayer">WebCamPlayer</a>
-        
+        <a routerLink="/barchart">BAR CHART</a>
     </nav>
     <router-outlet></router-outlet>
   `
